@@ -18,7 +18,8 @@ public class Main {
             else
                 i *= 2;
             
-            System.out.print(i + " ");
+            if (i <= b)
+                System.out.print(i + " ");
         }  
 
         sc.close();

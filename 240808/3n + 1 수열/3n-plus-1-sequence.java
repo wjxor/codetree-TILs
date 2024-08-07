@@ -8,18 +8,22 @@ public class Main {
         int cnt = 0;
 
         while (true) {
-            if (N % 2 == 0) {
-                N /= 2;
-            } else {
-                N = N * 3 + 1;
-            }
-
-            cnt++;
-
             if (N == 1) {
                 System.out.println(cnt);
                 break;
+            } else {
+                if (N % 2 == 0) {
+                    N /= 2;
+                } else {
+                    N = N * 3 + 1;
+                }
             }
+
+            
+
+            cnt++;
+
+            
         }
 
         sc.close();

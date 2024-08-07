@@ -7,8 +7,16 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int sum = 0;
+        int max, min;
 
-        for (int i = a; i <= b; i++) {
+        if (a > b) {
+            max = a;
+            min = b;
+        } else
+            max = b;
+            min = a;
+
+        for (int i = min; i <= max; i++) {
             if (i % 5 == 0) {
                 sum += i;
             }

@@ -9,7 +9,7 @@ public class Main {
         for (int i = 1; i <= 5; i++) {
             int num = sc.nextInt();
 
-            if (num % i != 0) {
+            if (num % 3 != 0) {
                 existed = false;
             }
         }
